@@ -1,11 +1,14 @@
 ## Livewire app for Youtube Course in My channel
 
+[Livewire Youtube Course ](https://www.youtube.com/watch?v=PleQ0v5DVY4&list=PLXgJ7cArk9uS-_K04rGmQITXml6_2isEp "Title").
+
+
 ## To install the application
 
-1. clone the repo : git clone https://github.com/alzaabi98/livewire-course.git
-2. copy .env-example as .env file 
+1. Clone the repo : git clone https://github.com/alzaabi98/livewire-course.git
+2. Copy .env-example as .env file 
 3. Create database and modify .env file with db name and db account details
-4. install venodr packages : composer install
+4. Install venodr packages : composer install
 5. npm install
 6. npm run dev
 7. Database Migrate  : php artisan migrate
