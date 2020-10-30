@@ -22,5 +22,7 @@ class AppAddTask extends Component
         ]);
 
         $this->title = "";
+
+        $this->emit('taskAdded');
     }
 }
