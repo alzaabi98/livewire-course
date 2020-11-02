@@ -19,4 +19,5 @@
 
         </tbody>
     </table>
+    {{ $tasks->links()}}
 </div>
