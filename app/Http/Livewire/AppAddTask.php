@@ -22,7 +22,7 @@ class AppAddTask extends Component
         ]);
 
         $this->title = "";
-
+        session()->flash('message', 'Post successfully updated.');
         $this->emit('taskAdded');
     }
 }

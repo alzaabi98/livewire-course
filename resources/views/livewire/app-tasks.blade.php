@@ -1,5 +1,8 @@
 <div>
     <h3 class="text-center">My Task ({{$totalTasks}})</h3>
+
+
+
     <table class="table bg-white ">
         <thead>
             <tr>
