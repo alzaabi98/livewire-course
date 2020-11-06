@@ -6,6 +6,11 @@
         {{ session('message')}}
     </div>
     @endif
+    @error('title')
+    <div class="alert alert-danger">
+        {{ $message}}
+    </div>
+    @enderror
     <div class="form-group">
         <label for="title">Title</label>
         <input type="text" wire:model="title" class="form-control">

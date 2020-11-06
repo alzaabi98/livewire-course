@@ -8,13 +8,23 @@ class AppAddTask extends Component
 {
     public $title;
 
+    protected $rules = [
+        'title' => 'required|email'
+    ];
+
     public function render()
     {
         return view('livewire.app-add-task');
     }
 
+    public function updated($title)
+    {
+        $this->validateOnly($title);
+    }
+
     public function addTask()
     {
+        $this->validate();
 
         auth()->user()->tasks()->create([
             'title' => $this->title,
