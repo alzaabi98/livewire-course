@@ -11,7 +11,8 @@ class AppTasks extends Component
 
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
-    
+    protected $listeners = ['taskAdded' => '$refresh'];
+
     public function render()
     {
         $totalTasks = auth()->user()->tasks()->count();
