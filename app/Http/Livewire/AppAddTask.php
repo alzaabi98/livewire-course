@@ -24,5 +24,6 @@ class AppAddTask extends Component
         $this->title = "";
 
         $this->emit('taskAdded');
+        session()->flash('message', "Task was added");
     }
 }
