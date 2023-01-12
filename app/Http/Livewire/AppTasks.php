@@ -18,4 +18,4 @@ class AppTasks extends Component
             'tasks' => $tasks
         ]);
     }
-git}
+}
